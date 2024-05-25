@@ -2,7 +2,7 @@ FROM rust:1.67 as builder
 WORKDIR /usr/src/huracan-graphql
 COPY ./Cargo.toml .
 COPY ./src ./src
-run cargo install --path .
+RUN cargo install --path .
 
 FROM debian:bullseye-slim
 RUN apt-get update && apt-get install -y ca-certificates build-essential pkg-config cmake tzdata && rm -rf /var/lib/apt/lists/*
