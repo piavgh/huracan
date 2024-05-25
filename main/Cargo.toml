@@ -18,8 +18,8 @@ tracing-futures = "~0.2.5"
 # Facilitates tokio-console to monitor channel and thread activity.
 console-subscriber = "0.1.5"
 tokio = { version = "1.28.2", features = ["full", "tracing"] }
-sui-sdk = { git = "https://github.com/MystenLabs/sui", tag = "mainnet-v1.2.1" }
-sui-types = { git = "https://github.com/MystenLabs/sui", tag = "mainnet-v1.2.1" }
+sui-sdk = { git = "https://github.com/MystenLabs/sui", tag = "mainnet-v1.25.1" }
+sui-types = { git = "https://github.com/MystenLabs/sui", tag = "mainnet-v1.25.1" }
 # copied from sui-sdk Cargo.toml
 jsonrpsee = { git="https://github.com/wlmyng/jsonrpsee.git", rev= "b1b300784795f6a64d0fcdf8f03081a9bc38bde8", features = ["http-client"] }
 pulsar = "6.0.0"
